@@ -4,6 +4,36 @@
 
 	console.log("Runing owl.js!")
 
+	// var $fig_design = document.querySelector('.fig_design')
+	// var $p = document.querySelector('p')
+	// var $nav_menu = document.querySelector('.nav_menu')
+	// var $mob_menu = document.querySelector('.mob_menu')
+
+	// console.log($nav_menu.offsetHeight)
+	// $mob_menu.addEventListener("click", function(event)
+	// {
+		
+	// 	 if ( $nav_menu.className == 'nav_menu'){
+	// 	 	$fig_design.className += ' opacity_zero'
+	// 	 	$nav_menu.className += ' visible_menu'
+	// 	 	$nav_menu.style.height = $nav_menu.offsetHeight-$fig_design.offsetHeight + "px"
+	// 		console.log($p.style.marginTop)
+	// 	 }
+	// 	 else{
+	// 		$fig_design.className = $fig_design.classList[0]
+	// 	 	$nav_menu.className = 'nav_menu'
+	// 	 	$p.style.marginTop = 0
+	// 	}
+
+	// 	event.preventDefault()
+	// })
+
+	// document.addEventListener('reload', function(event)
+	// {
+	// 	$p.style.marginTop = $nav_menu.offsetHeight-$fig_design.offsetHeight + "px"
+	// 	 	console.log($p.style.marginTop)
+	// })
+
 	var offsetHead = 300,
 		offsetBody = 200,
 		offsetWing = 400,

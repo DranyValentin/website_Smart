@@ -1,6 +1,4 @@
-
 @import "includes/settings";
-
 
 body
 {
@@ -11,7 +9,6 @@ body
 .bg_main
 {
 	background: linear-gradient( $animAngel, #CA3C8E, #004B9A);
-
 }
 
 .bg_design
@@ -56,6 +53,8 @@ body
 	flex-wrap: wrap;
 }
 
+
+// Styling Header
 .header
 {	
 	flex-basis: 100%;
@@ -72,14 +71,16 @@ body
 
 .wrap_link
 {
+	width: 100%;
 	display: flex;
-
+	padding: 0 20px;
 }
 
 .link
 {
-	display: block;
-	width: 650px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 //	border: 1px solid red;
 }
 
@@ -104,11 +105,7 @@ body
 	width: 100%;
 }
 
-.text_prof
-{
-	height: 40px;
-//	border: 3px solid navy;
-}
+
 .text_prof img
 {
 	width: 300px; height: 40px;
@@ -120,42 +117,86 @@ body
 	width: 117.3px; hieght: 51.5px;
 
 }
-
+// END Styling Header
 
 // Style NAV
-.nav 
+.nav
 {
+	position: relative;
+	flex-basis: 100%;
 	display: flex;
-}
-.fa-bars
-{
-	display: none;
+	flex-wrap: wrap;
+	flex-direction: column;
+//	align-content: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .mob_menu
 {
-	display: none;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	padding: 0 5px 0 10px;
+//	border: 2px solid red;
+
+	cursor: pointer;
+}
+
+.fa-bars
+{
+	width: 100%;
+	display: inline-block;
+	padding: 5px;
+
+//	border: 2px solid blue;
 }
 
 .nav_menu
 {
-	display: flex;
+	width: 300px;
+	display: none;
+	flex-wrap: wrap;
 	flex-direction: column;
+
+	border: 1px solid $color;
+	border-radius: 5px;
+
+	position: absolute;
+	top: 50px;
 }
+
+.visible_menu
+{
+	background: black;
+	display: flex;
+}
+
+@include anim_background;
 
 .nav li
 {
-	padding: 12.3px 45px;
+	z-index:1;
+	padding: 7.5px 15px;
 }
 
 .nav li:nth-child(1)
 {
-	padding-top: 0;
+	padding-top: 20px;
+}
+
+.nav li:last-child
+{
+	padding-bottom: 45px;
 }
 
 .nav a
 {
 	font-size: 21.2px;
+
 }
 
 .nav a:visited
@@ -183,6 +224,16 @@ body
 
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 25px;
+}
+
+
+.opacity_zero
+{
+	display: none;
 }
 
 .main p
@@ -253,43 +304,20 @@ body
 	text-align: center;
 }
 
-//.fig_support figcaption
-//{
-//	text-align: right;
-//	margin-top: -101px;
-//	display: none;
-//}
-
-/// MAKE SEO - BACKGROUN IMAGE
-//.fig_seo
-//{
-//flex: 1;
-//display: flex;
-//	background: url('/img/seo.svg') no-repeat;
-////	border: 1px solid red;
-////	background-position: left center;
-//	width: 100%;
-//height: 460px;
-//}
-//
-//.fig_seo h2
-//{
-//	font-size: $sizeCaption;
-//
-//	margin-top: 213px;
-//	margin-left: 9px;
-//}
-
-
-
 // Style ASIDE
 .aside
 {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	align-content: flex-end;
 	flex-direction: column;
 	flex-wrap: wrap;
+	width: 100%;
+}
+
+.width
+{
 	width: 75px;
 }
 
@@ -307,6 +335,8 @@ body
 .footer
 {
 	flex-basis: 100%;
+	background-color: #000000;
+	padding: 25px 0;
 }
 
 .footer ul
@@ -323,12 +353,3 @@ body
 	padding: 0 2px;
 }
 
-@media (max-width: 997px)
-{
-	@import "medium.scss";	
-}
-
-@media (max-width: 480px)
-{
-	@import "small.scss";	
-}

@@ -30,14 +30,14 @@ gulp.task('jade', function()
 // scss 
 gulp.task('scss', function ()
 {
-  return gulp.src('src/scss/style.scss')
+  return gulp.src('src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
 			browsers: ['last 15 versions'],
 			cascade: false
 		}))
     .pipe(cleanCSS())
-    .pipe(rename('mainstyle.min.css'))
+    //.pipe(rename('-.min.css'))
     .pipe(gulp.dest('dest/css/'))
     .pipe(connect.reload())
 });

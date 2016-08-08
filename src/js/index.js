@@ -15,7 +15,10 @@
 		return document.querySelectorAll(selector)
 	}
 	
+	var $aside = $('.aside')
 // Page Tech.html display
+	if ( location.pathname != '/' )
+		$aside.className += " width"
 	if ( location.pathname == '/design_.html' )
 		$('.design').className = $('.design').className.concat(' selected')
 	if ( location.pathname == '/develop_.html' )
@@ -80,4 +83,30 @@
 
 	 letter($texts[0], $texts)
 // END Text link animate (print, run and hide)
+
+// Mobile Menu
+	var $mob_menu = document.createElement('div')
+	var $fa_bars = document.createElement('i')
+	var $text_menu = document.createTextNode('Меню')
+	var $nav = $('.nav')
+
+	$fa_bars.className = "fa fa-bars fa-2x"
+	$mob_menu.appendChild($text_menu)
+	$mob_menu.appendChild($fa_bars)
+	$mob_menu.className = 'mob_menu'
+	$nav.insertBefore($mob_menu, $nav.firstChild)
+
+	 var $nav_menu = $('.nav_menu')
+	 $mob_menu = $('.mob_menu')
+	 $mob_menu.addEventListener("click", function(event)
+	 {
+	 	console.log('I in menu')
+	 	 if ( $nav_menu.className == 'nav_menu'){
+	 	 	$nav_menu.className += ' visible_menu'
+	 	 }
+	 	 else
+	 	 	$nav_menu.className = 'nav_menu';
+	 })
+
+// End Mobile Menu
 })()
