@@ -1,7 +1,6 @@
 
 @import "includes/settings";
 
-
 body
 {
 	display: flex;
@@ -70,21 +69,17 @@ body
 
 	margin-top: 10px;
 	margin-bottom: 10px;
-
-//	border: 1px solid blue;
 }
 
 .wrap_link
 {
 	display: flex;
-
 }
 
 .link
 {
 	display: block;
 	width: 650px;
-//	border: 1px solid red;
 }
 
 .header a
@@ -92,14 +87,9 @@ body
 	width: 240px; height: 40px;
 
 	display: block;
-//	justify-content: center;
-//	border: 2px solid green;
 
 	font-size: 31.76px;
 	color: #ffffff;
-
-//	text-transform: uppercase;
-//	text-align: center;
 }
 
 .empty,
@@ -111,12 +101,11 @@ body
 .text_prof
 {
 	height: 40px;
-//	border: 3px solid navy;
 }
+
 .text_prof img
 {
 	width: 300px; height: 40px;
-//	border: 3px solid navy;
 }
 
 .logo
@@ -178,8 +167,6 @@ body
 	opacity: 0.53;	
 }
 
-
-
 // Style MAIN
 .main
 {
@@ -208,7 +195,6 @@ body
 .main figure
 {
 	flex: 1;
-
 }
 
 .main figcaption,
@@ -239,62 +225,28 @@ body
 	height: auto;
 }
 
-//.fig_seo svg,
-//.fig_tech img,
-//.design_svg,
-.fig_develop img,
-//.fig_support img
+.fig_develop img
 {
 	max-width: 100%;
-
 }
 
 .fig_tech figcaption,
 .fig_design h2,
-.fig_develop figcaption,
-//.fig_seo figcaption
+.fig_develop figcaption
 {
 	text-align: center;
 }
 
-//.fig_support figcaption
-//{
-//	text-align: right;
-//	margin-top: -101px;
-//	display: none;
-//}
-
-/// MAKE SEO - BACKGROUN IMAGE
-//.fig_seo
-//{
-//flex: 1;
-//display: flex;
-//	background: url('/img/seo.svg') no-repeat;
-////	border: 1px solid red;
-////	background-position: left center;
-//	width: 100%;
-//height: 460px;
-//}
-//
-//.fig_seo h2
-//{
-//	font-size: $sizeCaption;
-//
-//	margin-top: 213px;
-//	margin-left: 9px;
-//}
-
-
-
 // Style ASIDE
 .aside
 {
+	width: 75px;
+
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 75px;
 }
 
 .aside
