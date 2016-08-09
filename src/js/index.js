@@ -16,9 +16,16 @@
 	}
 	
 	var $aside = $('.aside')
-// Page Tech.html display
+	var $nav_menu = $('.nav_menu')
+
+
+// Update Width for Pages and Add Color Background for Mobile Menu 
 	if ( location.pathname != '/' )
 		$aside.className += " width"
+	else
+		$nav_menu.className += ' bg_main_menu'
+
+// Add Opacity for Navigation Menu	
 	if ( location.pathname == '/design_.html' )
 		$('.design').className = $('.design').className.concat(' selected')
 	if ( location.pathname == '/develop_.html' )
@@ -85,28 +92,36 @@
 // END Text link animate (print, run and hide)
 
 // Mobile Menu
-	var $mob_menu = document.createElement('div')
+	// Create icon
 	var $fa_bars = document.createElement('i')
-	var $text_menu = document.createTextNode('Меню')
-	var $nav = $('.nav')
-
 	$fa_bars.className = "fa fa-bars fa-2x"
+
+	// Create Text 'Меню'
+	var $text_menu = document.createTextNode('Меню')
+
+	// Create mobile Menu
+	var $mob_menu = document.createElement('div')
 	$mob_menu.appendChild($text_menu)
 	$mob_menu.appendChild($fa_bars)
 	$mob_menu.className = 'mob_menu'
+	
+	// Add Mobile Menu in Nav
+	var $nav = $('.nav')
 	$nav.insertBefore($mob_menu, $nav.firstChild)
 
-	 var $nav_menu = $('.nav_menu')
-	 $mob_menu = $('.mob_menu')
-	 $mob_menu.addEventListener("click", function(event)
-	 {
-	 	console.log('I in menu')
-	 	 if ( $nav_menu.className == 'nav_menu'){
-	 	 	$nav_menu.className += ' visible_menu'
-	 	 }
-	 	 else
-	 	 	$nav_menu.className = 'nav_menu';
-	 })
-
+	// Event Click for Mobile Menu
+	var $className // container Class Name
+	var $nav_menu = $('.nav_menu')
+	$mob_menu = $('.mob_menu')
+	$mob_menu.addEventListener("click", function(event)
+	{
+		 if ( !$nav_menu.classList[$nav_menu.classList.length] &&
+		 		$nav_menu.classList[$nav_menu.classList.length-1] != 'visible_menu'){
+		 	$className = $nav_menu.className
+		 	$nav_menu.className += ' visible_menu'
+		 }
+		 else
+		 	$nav_menu.className = $className
+	})
 // End Mobile Menu
 })()

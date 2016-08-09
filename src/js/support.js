@@ -4,6 +4,12 @@
 
 	console.log("Runing support.js")
 
+// Color Background of Mobile Menu
+    var $nav_menu = document.querySelector('.nav_menu')
+    $nav_menu.className += ' bg_support_menu'
+// END Color Background of Mobile Menu
+
+// Animation
     var currentLight = 1
     var stepLight = 0.005
 

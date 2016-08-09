@@ -6,38 +6,42 @@ body
 	justify-content: center;
 }
 
-.bg_main
+.bg_main_menu
 {
 	background: linear-gradient( $animAngel, #CA3C8E, #004B9A);
 }
 
-.bg_design
+.bg_design_menu
 {
 	background: linear-gradient( $animAngel, #f0c833, #cd591e);
-
 }
 
-.bg_develop
+.bg_develop_menu
 {
 	background: linear-gradient( $animAngel, #e2ab35, #519f48);
 }
 
-.bg_tech
+.bg_tech_menu
 {
 	background: linear-gradient( $animAngel, #797ab6, #3e84bb);
 }
 
-.bg_seo
+.bg_seo_menu
 {
 	background: linear-gradient( $animAngel, #73bded, #294c97);
 }
 
-.bg_support
+.bg_support_menu
 {
 	background: linear-gradient( $animAngel, #787ab6, #3e84bb);
 }
 
-.bg_project
+.bg_project_menu
+{
+	background: linear-gradient( $animAngel, #f0c833, #cd591e);
+}
+
+.bg_contacts_menu
 {
 	background: linear-gradient( $animAngel, #f0c833, #cd591e);
 }
@@ -171,11 +175,8 @@ body
 
 .visible_menu
 {
-	background: black;
 	display: flex;
 }
-
-@include anim_background;
 
 .nav li
 {

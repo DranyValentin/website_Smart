@@ -4,6 +4,12 @@
 
 	console.log("Runing seo.js!")
 
+// Color Background of Mobile Menu
+    var $nav_menu = document.querySelector('.nav_menu')
+    $nav_menu.className += ' bg_seo_menu'
+// END Color Background of Mobile Menu
+
+// Animation
     var step = 0.5
     var boxWidth = svgElementSeo.width.baseVal.value
     var boxHeight = svgElementSeo.height.baseVal.value
