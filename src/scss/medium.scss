@@ -43,17 +43,10 @@
 // Styling Header
 .wrap_link
 {
-	width: 100%;
-	
 	padding: 0 20px;
 }
 
-.link
-{
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
+
 
 .text_prof img
 {
@@ -142,7 +135,7 @@
 {
 	width: 100%;
 
-	align-content: flex-end;
+	align-items: flex-end;
 }
 
 .width
@@ -150,6 +143,12 @@
 	width: 75px;
 }
 
+.wr_icons
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 // Style FOOTER
 .footer
 {
