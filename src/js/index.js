@@ -66,7 +66,7 @@
 //Fuction 'dx' move and opacity letter
 	function dx()
 	{
-		if ( opacityFactor < 0 ) return
+		if ( dxFactor == 1500 ) return
 		
 		$texts[$texts.length-1].setAttribute("dx", dxFactor++)
 		$texts[$texts.length-1].setAttribute("fill-opacity", opacityFactor -= 0.05)
@@ -84,9 +84,6 @@
 		$texts[$texts.length-7].setAttribute("fill-opacity", opacityFactor -= 0.001)
 		$texts[$texts.length-8].setAttribute("dx", dxFactor++)
 		$texts[$texts.length-8].setAttribute("fill-opacity", opacityFactor -= 0.001)
-		$texts[$texts.length-9].setAttribute("dx", dxFactor++)
-		$texts[$texts.length-9].setAttribute("fill-opacity", opacityFactor -= 0.001)
-
 
 		setTimeout(dx, 100)
 	}
