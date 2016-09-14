@@ -73,13 +73,18 @@ body
 
 .wrap_link
 {
+	width: 100%;
+
 	display: flex;
 }
 
 .link
 {
-	display: block;
-	width: 650px;
+	width: 100%;
+	max-width: 242px;
+
+	display: flex;
+	justify-content: center;
 }
 
 .header a
@@ -247,11 +252,16 @@ body
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
+
+	padding: 10px;
+	padding-top: 0;
 }
 
-.aside
+.wr_icons
 {
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .aside img:nth-child(1)
