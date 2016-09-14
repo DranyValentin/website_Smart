@@ -212,6 +212,7 @@ body
 }
 
 .fig_design,
+.fig_develop,
 .fig_seo,
 .fig_tech,
 .fig_support
@@ -222,6 +223,7 @@ body
 }
 
 .fig_design svg,
+.fig_develop,
 .fig_seo svg,
 .fig_tech svg,
 .fig_support svg
@@ -230,14 +232,14 @@ body
 	height: auto;
 }
 
-.fig_develop img
-{
-	max-width: 100%;
-}
+// .fig_develop img
+// {
+// 	max-width: 100%;
+// }
 
 .fig_tech figcaption,
 .fig_design h2,
-.fig_develop figcaption
+.fig_develop h2
 {
 	text-align: center;
 }
